@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_dfm/ui/pages/auth/login.page.dart';
 import 'package:mobile_dfm/ui/pages/home.page.dart';
 import 'package:mobile_dfm/ui/pages/kourel.page.dart';
 import 'package:mobile_dfm/ui/pages/pole.page.dart';
@@ -17,6 +18,7 @@ class App extends StatelessWidget {
       title: 'Dahira Foulkoul Mash Oun',
       routes: {
         "/":(context)=>HomePage(),
+        "/login":(context)=>LoginPage(),
         "/membres":(context)=>MembrePage(),
         "/poles":(context)=>PolePage(),
         "/kourels":(context)=>KourelPage()
@@ -24,7 +26,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple
       ),
-      initialRoute: "/",
+      initialRoute: "/login",
     );
   }
 }
